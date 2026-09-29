@@ -232,32 +232,32 @@ As tarefas abaixo devem ser executadas na ordem indicada. Cada etapa deve deixar
 
 ### Tarefa 6: Implementar a composicao e o envio
 
-- Criar o campo multiline e o botao de envio.
-- Controlar o texto digitado.
-- Desabilitar o envio para valor vazio ou composto somente por espacos.
-- Ao enviar, adicionar uma mensagem ao estado do historico com o remetente atual.
-- Limpar o campo depois do envio.
-- Preservar uma interacao confortavel apos o envio, incluindo foco quando apropriado.
+- [x] Criar o campo multiline e o botao de envio.
+- [x] Controlar o texto digitado.
+- [x] Desabilitar o envio para valor vazio ou composto somente por espacos.
+- [x] Ao enviar, adicionar uma mensagem ao estado do historico com o remetente atual.
+- [x] Limpar o campo depois do envio.
+- [x] Preservar uma interacao confortavel apos o envio, incluindo foco quando apropriado.
 
-**Resultado:** o fluxo principal de conversa funciona para os dois remetentes.
+**[x] Resultado:** o fluxo principal de conversa funciona para os dois remetentes.
 
 ### Tarefa 7: Ajustar o comportamento de viewport
 
-- Testar a composicao em celulares estreitos, tablets e desktop.
-- Confirmar que o card fica no inferior sem sobrepor o historico.
-- Ajustar crescimento do campo multiline e limites de altura.
-- Confirmar que a largura maxima e o alinhamento central funcionam em telas grandes.
+- [x] Testar a composicao em celulares estreitos, tablets e desktop.
+- [x] Confirmar que o card fica no inferior sem sobrepor o historico.
+- [x] Ajustar crescimento do campo multiline e limites de altura.
+- [x] Confirmar que a largura maxima e o alinhamento central funcionam em telas grandes.
 
-**Resultado:** a experiencia permanece utilizavel nos tamanhos de tela definidos.
+**[x] Resultado:** a experiencia permanece utilizavel nos tamanhos de tela definidos.
 
 ### Tarefa 8: Refinar acessibilidade e estados visuais
 
-- Revisar foco visivel, ordem de tabulacao e nomes acessiveis.
-- Revisar contraste de texto, fundo, bordas e estado desabilitado.
-- Confirmar que o estado do remetente nao depende somente da cor.
-- Garantir que o botao de envio comunique corretamente seu estado.
+- [x] Revisar foco visivel, ordem de tabulacao e nomes acessiveis.
+- [x] Revisar contraste de texto, fundo, bordas e estado desabilitado.
+- [x] Confirmar que o estado do remetente nao depende somente da cor.
+- [x] Garantir que o botao de envio comunique corretamente seu estado.
 
-**Resultado:** a interface e compreensivel e operavel sem depender exclusivamente de percepcao visual ou mouse.
+**[x] Resultado:** a interface e compreensivel e operavel sem depender exclusivamente de percepcao visual ou mouse.
 
 ### Tarefa 9: Validar o comportamento completo
 
