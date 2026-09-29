@@ -188,9 +188,9 @@ As tarefas abaixo devem ser executadas na ordem indicada. Cada etapa deve deixar
 
 ### Tarefa 1: Confirmar a base do projeto
 
-- Verificar o funcionamento do Vite e dos scripts existentes.
-- Confirmar que Tailwind CSS esta carregado pelo `src/index.css`.
-- Remover o estado inicial vazio de `App.tsx` apenas quando a primeira estrutura de tela estiver pronta.
+- [x] Verificar o funcionamento do Vite e dos scripts existentes.
+- [x] Confirmar que Tailwind CSS esta carregado pelo `src/index.css`.
+- [x] Manter o estado inicial vazio de `App.tsx` ate que a primeira estrutura de tela esteja pronta.
 
 **Resultado:** a base tecnica esta executavel e pronta para receber a interface.
 
