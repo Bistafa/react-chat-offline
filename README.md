@@ -1,32 +1,52 @@
-# React + TypeScript + Vite
+# Chat Offline
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Uma interface local para simular uma conversa entre usuario e robo. As mensagens sao adicionadas manualmente e ficam apenas na memoria da pagina: nao ha conexao com API, respostas automaticas ou persistencia.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js compativel com Vite 8
+- npm
 
-## React Compiler
+## Comecar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Instale as dependencias e inicie o servidor de desenvolvimento:
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+O Vite mostrara no terminal o endereco local para abrir no navegador.
+
+## Uso
+
+- Digite uma mensagem no campo na parte inferior da tela.
+- Escolha se a proxima mensagem sera enviada como usuario ou robo.
+- Envie pelo botao ou pela tecla Enter; use Shift+Enter para inserir uma nova linha.
+- O historico permanece disponivel enquanto a pagina estiver aberta. Ao recarrega-la, a conversa volta a mensagem inicial.
+
+## Scripts
+
+| Comando | Descricao |
+| --- | --- |
+| `npm run dev` | Inicia o servidor de desenvolvimento do Vite. |
+| `npm run build` | Executa a verificacao TypeScript e gera a versao de producao em `dist/`. |
+| `npm run lint` | Analisa o codigo com Oxlint. |
+| `npm run preview` | Serve localmente a versao gerada para inspecao. |
+
+## Tecnologias
+
+- React 19
+- TypeScript
+- Vite 8
+- Tailwind CSS 4
+
+## Estrutura
+
+```text
+src/
+  components/  Componentes da conversa e do campo de composicao
+  types/       Tipos das mensagens e dos remetentes
+  App.tsx      Estado e fluxo principal do chat
+  index.css    Estilos globais
+```
