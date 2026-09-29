@@ -1,4 +1,9 @@
-import { useRef, useState, type FormEvent } from 'react'
+import {
+    useRef,
+    useState,
+    type FormEvent,
+    type KeyboardEvent,
+} from 'react'
 import RoleToggle from './RoleToggle'
 import type { MessageRole } from '../types/chat'
 
@@ -38,6 +43,19 @@ export default function MessageComposer({
         }
     }
 
+    function handleKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
+        if (
+            event.key !== 'Enter' ||
+            event.shiftKey ||
+            event.nativeEvent.isComposing
+        ) {
+            return
+        }
+
+        event.preventDefault()
+        if (canSend) event.currentTarget.form?.requestSubmit()
+    }
+
     return (
         <div className="shrink-0 px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3">
             <form
@@ -60,6 +78,7 @@ export default function MessageComposer({
                         className="max-h-36 min-h-11 min-w-0 flex-1 resize-none overflow-y-auto rounded-lg border border-stone-300 bg-white px-3 py-2.5 text-base leading-6 text-stone-900 outline-none placeholder:text-stone-500 focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-1"
                         id="message-text"
                         onChange={(event) => handleChange(event.currentTarget.value)}
+                        onKeyDown={handleKeyDown}
                         placeholder="Escreva uma mensagem..."
                         ref={textareaRef}
                         rows={1}
