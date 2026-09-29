@@ -214,21 +214,21 @@ As tarefas abaixo devem ser executadas na ordem indicada. Cada etapa deve deixar
 
 ### Tarefa 4: Implementar a apresentacao do historico
 
-- Criar os componentes de historico e bolha de mensagem.
-- Renderizar a mensagem inicial.
-- Diferenciar visualmente usuario e robo por alinhamento, cor ou tratamento de bolha.
-- Garantir lista rolavel e leitura adequada em telas pequenas.
+- [x] Criar os componentes de historico e bolha de mensagem.
+- [x] Renderizar a mensagem inicial.
+- [x] Diferenciar visualmente usuario e robo por alinhamento, cor ou tratamento de bolha.
+- [x] Garantir lista rolavel e leitura adequada em telas pequenas.
 
-**Resultado:** o usuario consegue visualizar uma conversa inicial e distinguir seus remetentes.
+**[x] Resultado:** o usuario consegue visualizar uma conversa inicial e distinguir seus remetentes.
 
 ### Tarefa 5: Implementar o controle de remetente
 
-- Criar o toggle visual com os estados usuario e robo.
-- Manter o remetente selecionado em estado local ou no estado coordenador de `App`.
-- Adicionar nome acessivel e suporte a teclado.
-- Aplicar borda roxa ao card quando o modo robo estiver ativo.
+- [x] Criar o toggle visual com os estados usuario e robo.
+- [x] Manter o remetente selecionado em estado local ou no estado coordenador de `App`.
+- [x] Adicionar nome acessivel e suporte a teclado.
+- [x] Aplicar borda roxa ao card quando o modo robo estiver ativo.
 
-**Resultado:** o modo da proxima mensagem pode ser alterado e e visualmente evidente.
+**[x] Resultado:** o modo da proxima mensagem pode ser alterado e e visualmente evidente.
 
 ### Tarefa 6: Implementar a composicao e o envio
 
