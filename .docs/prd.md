@@ -196,21 +196,21 @@ As tarefas abaixo devem ser executadas na ordem indicada. Cada etapa deve deixar
 
 ### Tarefa 2: Criar os tipos do dominio
 
-- Criar `src/types` caso ainda nao exista.
-- Definir o tipo do papel do remetente.
-- Definir o tipo de mensagem com identificador, texto e remetente.
-- Usar somente declaracoes `type`.
+- [x] Criar `src/types` caso ainda nao exista.
+- [x] Definir o tipo do papel do remetente.
+- [x] Definir o tipo de mensagem com identificador, texto e remetente.
+- [x] Usar somente declaracoes `type`.
 
-**Resultado:** o contrato de dados do chat esta centralizado e tipado.
+**Resultado:** o contrato de dados do chat esta centralizado e tipado. [x]
 
 ### Tarefa 3: Montar a estrutura responsiva da tela
 
-- Criar o container principal da aplicacao.
-- Aplicar fundo marrom claro e layout mobile first.
-- Criar a area centralizada com largura maxima `2xl` para historico e composicao.
-- Reservar espaco suficiente para que o card inferior nao cubra o historico.
+- [x] Criar o container principal da aplicacao.
+- [x] Aplicar fundo marrom claro e layout mobile first.
+- [x] Criar a area centralizada com largura maxima `2xl` para historico e composicao.
+- [x] Reservar espaco suficiente para que o card inferior nao cubra o historico.
 
-**Resultado:** a tela possui a geometria principal, ainda sem o fluxo completo de mensagens.
+- [x] **Resultado:** a tela possui a geometria principal, ainda sem o fluxo completo de mensagens.
 
 ### Tarefa 4: Implementar a apresentacao do historico
 
